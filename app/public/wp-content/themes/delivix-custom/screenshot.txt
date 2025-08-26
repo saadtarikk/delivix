@@ -1,0 +1,3 @@
+This is a placeholder for the theme screenshot.
+The actual screenshot.png file should be a PNG image with dimensions 1200x900 pixels.
+This screenshot will be displayed in the WordPress admin when selecting themes.
