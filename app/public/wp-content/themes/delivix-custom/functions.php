@@ -178,24 +178,7 @@ function delivix_custom_image_sizes($sizes) {
 }
 add_filter('image_size_names_choose', 'delivix_custom_image_sizes');
 
-/**
- * Custom Body Classes
- */
-function delivix_custom_body_classes($classes) {
-    // Add page-specific classes
-    if (is_page()) {
-        $classes[] = 'page-' . get_post_field('post_name', get_post());
-    }
-    
-    // Add template-specific classes
-    if (is_page_template()) {
-        $template = get_page_template_slug();
-        $classes[] = 'template-' . str_replace('.php', '', $template);
-    }
-    
-    return $classes;
-}
-add_filter('body_class', 'delivix_custom_body_classes');
+
 
 /**
  * Security Enhancements
