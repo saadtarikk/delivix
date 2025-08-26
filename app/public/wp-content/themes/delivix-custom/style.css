@@ -27,6 +27,31 @@ Requires PHP: 7.4
     padding: 0;
 }
 
+/* Framer-inspired base styles */
+html, body, #main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: inherit;
+}
+
+/* Aspect ratio support for body */
+@supports (aspect-ratio: 1) {
+    body {
+        --framer-aspect-ratio-supported: auto;
+    }
+}
+
+/* Apply design tokens to form elements - Exact Framer Font System */
+body, input, textarea, select, button {
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+}
+
 /* Root Variables - Blue Frontier Inspired Color Palette */
 :root {
     /* Primary Colors */
@@ -47,6 +72,7 @@ Requires PHP: 7.4
     /* Neutral Colors */
     --white: #ffffff;
     --black: #000000;
+    --text-white: #ffffff;
     --gray-50: #f9fafb;
     --gray-100: #f3f4f6;
     --gray-200: #e5e7eb;
@@ -109,11 +135,25 @@ html {
 }
 
 body {
-    font-family: var(--font-primary);
-    font-size: 1rem;
+    /* Framer-inspired background using design tokens */
+    background: var(--token-7ebb36b1-484e-4da3-be5a-f90d839952c4, rgb(30, 30, 30));
+    
+    /* Typography - Exact Framer Font System */
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
     line-height: 1.6;
-    color: var(--gray-800);
-    background-color: var(--white);
+    color: var(--text-white);
+    
+    /* Layout */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+    /* Framer system properties */
+    --framer-will-change-override: none;
+    
+    /* Font smoothing */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
