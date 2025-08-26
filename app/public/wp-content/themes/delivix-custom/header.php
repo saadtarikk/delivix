@@ -492,7 +492,7 @@
 
     <!-- Hero Section (if on front page) -->
     <?php if (is_front_page()) : ?>
-        <section id="main-content" class="relative w-full h-full bg-white overflow-hidden hero-section" role="main">
+        <section id="main-content" class="relative w-full h-full overflow-hidden hero-section" role="main">
             <!-- Grid Background Lines -->
             <div class="absolute inset-0 w-full h-full hidden md:block pointer-events-none">
                 <div class="h-full grid grid-cols-custom xl:grid-cols-custom">

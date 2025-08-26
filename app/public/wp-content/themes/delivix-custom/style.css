@@ -136,7 +136,7 @@ html {
 
 body {
     /* Custom background color */
-    background: var(--bg-primary);
+    background: #1e1e1e;
     
     /* Typography - Exact Framer Font System */
     font-family: 'Inter', sans-serif;
