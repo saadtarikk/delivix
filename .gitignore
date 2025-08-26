@@ -1,0 +1,103 @@
+# WordPress Core Files (if you're not developing WordPress itself)
+# wp-config.php
+# wp-content/uploads/
+# wp-content/cache/
+# wp-content/backup-db/
+# wp-content/backups/
+# wp-content/blogs.dir/
+# wp-content/upgrade/
+# wp-content/wp-cache-config.php
+# wp-content/plugins/hello.php
+
+# WordPress Configuration
+wp-config.php
+wp-config-local.php
+
+# WordPress Content (uploads, cache, etc.)
+wp-content/uploads/
+wp-content/cache/
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/upgrade/
+wp-content/wp-cache-config.php
+
+# WordPress Plugins (exclude all plugins by default)
+wp-content/plugins/*
+# Uncomment and modify the line below if you want to track specific plugins
+# !wp-content/plugins/your-custom-plugin/
+
+# WordPress Themes (exclude all themes by default)
+wp-content/themes/*
+# Uncomment and modify the line below if you want to track specific themes
+# !wp-content/themes/your-custom-theme/
+
+# WordPress Core (if you're not developing WordPress itself)
+wp-admin/
+wp-includes/
+wp-content/plugins/hello.php
+
+# Logs
+logs/
+*.log
+error_log
+access_log
+
+# Database
+*.sql
+*.sqlite
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Node.js (if using build tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Composer (if using PHP dependencies)
+vendor/
+composer.lock
+
+# Local development
+local-config.php
+local-settings.php
+
+# Backup files
+*.zip
+*.tar.gz
+*.rar
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+
+# Local development tools
+Local Sites/
+local/
