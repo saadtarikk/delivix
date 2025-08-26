@@ -55,19 +55,19 @@ body, input, textarea, select, button {
 /* Root Variables - Blue Frontier Inspired Color Palette */
 :root {
     /* Primary Colors */
-    --primary-blue: #1e3a8a;
-    --primary-dark: #1e40af;
-    --primary-light: #3b82f6;
+    --primary: #ed6c4c;
+    --primary-dark: #d55a3a;
+    --primary-light: #f07a5c;
     
     /* Secondary Colors */
-    --secondary-gray: #6b7280;
-    --secondary-light: #f3f4f6;
-    --secondary-dark: #374151;
+    --secondary: rgb(211, 216, 218);
+    --secondary-light: rgb(230, 235, 237);
+    --secondary-dark: rgb(180, 185, 187);
     
-    /* Accent Colors */
-    --accent-blue: #2563eb;
-    --accent-light: #dbeafe;
-    --accent-dark: #1d4ed8;
+    /* Background Colors */
+    --bg-primary: #1e1e1e;
+    --bg-secondary: #2a2a2a;
+    --bg-light: #333333;
     
     /* Neutral Colors */
     --white: #ffffff;
@@ -135,8 +135,8 @@ html {
 }
 
 body {
-    /* Framer-inspired background using design tokens */
-    background: var(--token-7ebb36b1-484e-4da3-be5a-f90d839952c4, rgb(30, 30, 30));
+    /* Custom background color */
+    background: var(--bg-primary);
     
     /* Typography - Exact Framer Font System */
     font-family: 'Inter', sans-serif;
@@ -336,6 +336,130 @@ a:hover {
 @media (min-width: 1400px) {
     .container {
         max-width: 1320px;
+    }
+}
+
+/* ========================================
+   GRID SYSTEM & LAYOUT
+   ======================================== */
+
+/* Custom Grid Layout */
+.grid-cols-custom {
+    display: grid;
+    grid-template-columns: 2fr 10fr 10fr 2fr;
+}
+
+.xl\:grid-cols-custom {
+    grid-template-columns: 2fr 10fr 10fr 10fr 10fr 2fr;
+}
+
+/* Grid Borders */
+.grid-border {
+    border-right: 1px solid var(--bg-primary);
+    height: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-primary);
+    overflow: hidden;
+}
+
+.hero-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 10fr 10fr 2fr;
+    position: absolute;
+    inset: 0;
+    margin-top: 10rem;
+    margin-bottom: 12rem;
+    gap: 1rem 0;
+}
+
+.xl\:hero-grid {
+    grid-template-columns: 2fr 10fr 10fr 10fr 10fr 2fr;
+}
+
+/* Hero Text Positioning */
+.hero-text-row-1 {
+    grid-row: 1;
+    grid-column: 2 / 5;
+    display: flex;
+    overflow: hidden;
+}
+
+.xl\:hero-text-row-1 {
+    grid-column: 2 / 6;
+}
+
+.hero-text-row-2 {
+    grid-row: 2;
+    grid-column: 2 / 4;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.xl\:hero-text-row-2 {
+    grid-column: 2 / 6;
+    justify-content: flex-end;
+}
+
+.hero-text-row-3 {
+    grid-row: 3;
+    grid-column: 2 / 4;
+    display: flex;
+    padding-right: 1rem;
+}
+
+/* Hero Typography */
+.hero-title {
+    font-family: 'Geist Sans', 'Inter', sans-serif;
+    font-size: 10vw;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--primary);
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 12vw;
+    }
+}
+
+@media (min-width: 1280px) {
+    .hero-title {
+        font-size: 10.5vw;
+    }
+}
+
+.hero-title-row-1 {
+    transform: translateX(0);
+}
+
+@media (min-width: 768px) {
+    .hero-title-row-1 {
+        transform: translateX(-0.09em);
+    }
+}
+
+.hero-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.25;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 32rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .hero-subtitle {
+        font-size: 1.5rem;
     }
 }
 

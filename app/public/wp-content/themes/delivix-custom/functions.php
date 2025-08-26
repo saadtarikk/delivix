@@ -66,6 +66,9 @@ function delivix_custom_scripts() {
     // Enqueue Google Fonts
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap', array(), null);
     
+    // Enqueue Geist Sans Font
+    wp_enqueue_style('geist-sans', 'https://fonts.googleapis.com/css2?family=Geist+Sans:wght@300;400;500;600;700&display=swap', array(), null);
+    
     // Enqueue Font Awesome
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', array(), '6.4.0');
     

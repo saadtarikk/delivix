@@ -96,38 +96,41 @@
 
     <!-- Hero Section (if on front page) -->
     <?php if (is_front_page()) : ?>
-        <section class="hero-section bg-gradient-primary text-white py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h1 class="hero-title display-4 fw-bold mb-4">
-                            <?php echo get_theme_mod('hero_title', __('Your Digital Partner', 'delivix-custom')); ?>
-                        </h1>
-                        <p class="hero-subtitle lead mb-4">
-                            <?php echo get_theme_mod('hero_subtitle', __('We accelerate ambition, grow brands, build digital products, and craft experiences that bring positive change, value, and innovation.', 'delivix-custom')); ?>
+        <section id="main-content" class="relative w-full h-full bg-white overflow-hidden hero-section" role="main">
+            <!-- Grid Background Lines -->
+            <div class="absolute inset-0 w-full h-full hidden md:block pointer-events-none">
+                <div class="h-full grid grid-cols-custom xl:grid-cols-custom">
+                    <div class="grid-border"></div>
+                    <div class="grid-border"></div>
+                    <div class="grid-border"></div>
+                    <div class="grid-border"></div>
+                    <div class="grid-border"></div>
+                    <div class="grid-border"></div>
+                </div>
+            </div>
+            
+            <!-- Hero Content Grid -->
+            <div class="relative grid hero-grid xl:hero-grid">
+                <!-- Row 1: DÉVELOPPEMENT -->
+                <div class="hero-text-row-1 xl:hero-text-row-1 flex overflow-hidden" style="--animation-delay: 0s;">
+                    <h1 class="hero-title hero-title-row-1" data-fr="DÉVELOPPEMENT" data-en="DEVELOPMENT">
+                        DÉVELOPPEMENT
+                    </h1>
+                </div>
+                
+                <!-- Row 2: AGENCE -->
+                <div class="hero-text-row-2 xl:hero-text-row-2 flex justify-center md:justify-end overflow-hidden" style="--animation-delay: 0.15s;">
+                    <h1 class="hero-title" data-fr="AGENCE" data-en="AGENCY">
+                        AGENCY
+                    </h1>
+                </div>
+                
+                <!-- Row 3: Subtitle -->
+                <div class="hero-text-row-3 flex pr-4" style="--animation-delay: 0.3s;">
+                    <div class="mt-8 max-w-lg overflow-hidden">
+                        <p class="hero-subtitle" data-fr="VOUS AVEZ UNE IDÉE DE PROJET MAIS VOUS ÊTES PERDU AVEC TOUTE LA TECHNIQUE? LAISSEZ-NOUS NOUS EN OCCUPER ET RÉALISER VOTRE PROJET!" data-en="YOU HAVE A PROJECT IDEA BUT YOU'RE LOST WITH ALL THE TECH STUFF? LET US HANDLE IT AND MAKE IT HAPPEN!">
+                            YOU HAVE A PROJECT IDEA BUT YOU'RE LOST WITH ALL THE TECH STUFF? LET US HANDLE IT AND MAKE IT HAPPEN!
                         </p>
-                        <div class="hero-buttons">
-                            <a href="<?php echo esc_url(get_theme_mod('hero_cta_primary', home_url('/services'))); ?>" class="btn btn-light btn-lg me-3 mb-2">
-                                <?php echo get_theme_mod('hero_cta_primary_text', __('Our Services', 'delivix-custom')); ?>
-                            </a>
-                            <a href="<?php echo esc_url(get_theme_mod('hero_cta_secondary', home_url('/about'))); ?>" class="btn btn-outline-light btn-lg mb-2">
-                                <?php echo get_theme_mod('hero_cta_secondary_text', __('Learn More', 'delivix-custom')); ?>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="hero-image text-center">
-                            <?php
-                            $hero_image = get_theme_mod('hero_image');
-                            if ($hero_image) {
-                                echo wp_get_attachment_image($hero_image, 'hero-medium', array('class' => 'img-fluid rounded shadow-lg'));
-                            } else {
-                                echo '<div class="hero-placeholder bg-white bg-opacity-10 rounded d-flex align-items-center justify-content-center" style="height: 400px;">';
-                                echo '<i class="fas fa-image fa-3x text-white-50"></i>';
-                                echo '</div>';
-                            }
-                            ?>
-                        </div>
                     </div>
                 </div>
             </div>
