@@ -340,23 +340,221 @@ a:hover {
 }
 
 /* ========================================
-   GRID SYSTEM & LAYOUT
+   ECRIN DIGITAL HERO INTEGRATION
    ======================================== */
 
-/* Custom Grid Layout */
-.grid-cols-custom {
-    display: grid;
+/* Custom Fonts - Geist Sans */
+@font-face {
+    font-family: 'Geist Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://www.ecrin.digital/_astro/geist-sans-latin-400-normal.gapTbOY8.woff2) format("woff2"),
+         url(https://www.ecrin.digital/_astro/geist-sans-latin-400-normal.BOaIZNA2.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Geist Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url(https://www.ecrin.digital/_astro/geist-sans-latin-500-normal.uokXdC-Q.woff2) format("woff2"),
+         url(https://www.ecrin.digital/_astro/geist-sans-latin-500-normal.CN2lyvyL.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Geist Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url(https://www.ecrin.digital/_astro/geist-sans-latin-600-normal.DFOURf8L.woff2) format("woff2"),
+         url(https://www.ecrin.digital/_astro/geist-sans-latin-600-normal.CA1yjETN.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Geist Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url(https://www.ecrin.digital/_astro/geist-sans-latin-700-normal.BmN9tIp5.woff2) format("woff2"),
+         url(https://www.ecrin.digital/_astro/geist-sans-latin-700-normal.CjScfYeH.woff) format("woff");
+}
+
+/* Custom Fonts - Poppins */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://www.ecrin.digital/_astro/poppins-latin-400-normal.cpxAROuN.woff2) format("woff2"),
+         url(https://www.ecrin.digital/_astro/poppins-latin-400-normal.BOb3E3N0.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url(https://www.ecrin.digital/_astro/poppins-latin-500-normal.C8OXljZJ.woff2) format("woff2"),
+         url(https://www.ecrin.digital/_astro/poppins-latin-500-normal.DGXqpDMm.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url(https://www.ecrin.digital/_astro/poppins-latin-600-normal.zEkxB9Mr.woff2) format("woff2"),
+         url(https://www.ecrin.digital/_astro/poppins-latin-600-normal.BJdTmd5m.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url(https://www.ecrin.digital/_astro/poppins-latin-700-normal.Qrb0O0WB.woff2) format("woff2"),
+         url(https://www.ecrin.digital/_astro/poppins-latin-700-normal.BVuQR_eA.woff) format("woff");
+}
+
+/* Grid System - Ecrin Digital Integration */
+.grid-cols-\[2fr_10fr_10fr_2fr\] {
     grid-template-columns: 2fr 10fr 10fr 2fr;
 }
 
-.xl\:grid-cols-custom {
+.xl\:grid-cols-\[2fr_10fr_10fr_10fr_10fr_2fr\] {
     grid-template-columns: 2fr 10fr 10fr 10fr 10fr 2fr;
 }
 
-/* Grid Borders */
-.grid-border {
-    border-right: 1px solid #1e1e1e;
-    height: 100%;
+/* Grid Positioning */
+.col-start-2 {
+    grid-column-start: 2;
+}
+
+.col-end-4 {
+    grid-column-end: 4;
+}
+
+.col-end-5 {
+    grid-column-end: 5;
+}
+
+.xl\:col-end-6 {
+    grid-column-end: 6;
+}
+
+.row-start-1 {
+    grid-row-start: 1;
+}
+
+.row-start-2 {
+    grid-row-start: 2;
+}
+
+.row-start-3 {
+    grid-row-start: 3;
+}
+
+/* Spacing */
+.mt-40 {
+    margin-top: 10rem;
+}
+
+.mb-48 {
+    margin-bottom: 12rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.gap-y-4 {
+    row-gap: 1rem;
+}
+
+.pr-4 {
+    padding-right: 1rem;
+}
+
+/* Typography */
+.font-geist-sans {
+    font-family: 'Geist Sans', sans-serif;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-\[10vw\] {
+    font-size: 10vw;
+}
+
+.md\:text-\[12vw\] {
+    font-size: 12vw;
+}
+
+.xl\:text-\[10\.5vw\] {
+    font-size: 10.5vw;
+}
+
+.xl\:text-\[10vw\] {
+    font-size: 10vw;
+}
+
+.text-sm {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.leading-none {
+    line-height: 1;
+}
+
+.leading-tight {
+    line-height: 1.25;
+}
+
+.tracking-tighter {
+    letter-spacing: -.05em;
+}
+
+.text-black\/80 {
+    color: #000c;
+}
+
+.max-w-lg {
+    max-width: 32rem;
+}
+
+/* Transform Utilities */
+.translate-x-0 {
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.md\:-translate-x-\[0\.09em\] {
+    --tw-translate-x: -.09em;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+/* Responsive Display */
+@media (min-width: 768px) {
+    .md\:block {
+        display: block;
+    }
+    
+    .md\:justify-end {
+        justify-content: flex-end;
+    }
 }
 
 /* Hero Section */
@@ -368,99 +566,82 @@ a:hover {
     overflow: hidden;
 }
 
-.hero-grid {
-    position: relative;
-    display: grid;
-    grid-template-columns: 2fr 10fr 10fr 2fr;
+/* Hero Text Animation */
+.hero-text {
+    transform: translateY(100%);
+    animation: slideUp .8s cubic-bezier(.16, 1, .3, 1) forwards;
+    animation-delay: var(--animation-delay);
+}
+
+.hero-title::selection {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.hero-section p::selection {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+/* Animation Keyframes */
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Additional Tailwind Utilities */
+.pointer-events-none {
+    pointer-events: none;
+}
+
+.absolute {
     position: absolute;
-    inset: 0;
-    margin-top: 10rem;
-    margin-bottom: 12rem;
-    gap: 1rem 0;
 }
 
-.xl\:hero-grid {
-    grid-template-columns: 2fr 10fr 10fr 10fr 10fr 2fr;
-}
-
-/* Hero Text Positioning */
-.hero-text-row-1 {
-    grid-row: 1;
-    grid-column: 2 / 5;
-    display: flex;
-    overflow: hidden;
-}
-
-.xl\:hero-text-row-1 {
-    grid-column: 2 / 6;
-}
-
-.hero-text-row-2 {
-    grid-row: 2;
-    grid-column: 2 / 4;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.xl\:hero-text-row-2 {
-    grid-column: 2 / 6;
-    justify-content: flex-end;
-}
-
-.hero-text-row-3 {
-    grid-row: 3;
-    grid-column: 2 / 4;
-    display: flex;
-    padding-right: 1rem;
-}
-
-/* Hero Typography */
-.hero-title {
-    font-family: 'Geist Sans', 'Inter', sans-serif;
-    font-size: 10vw;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    color: var(--primary);
+.relative {
     position: relative;
 }
 
-@media (min-width: 768px) {
-    .hero-title {
-        font-size: 12vw;
-    }
+.inset-0 {
+    inset: 0;
 }
 
-@media (min-width: 1280px) {
-    .hero-title {
-        font-size: 10.5vw;
-    }
+.flex {
+    display: flex;
 }
 
-.hero-title-row-1 {
-    transform: translateX(0);
+.grid {
+    display: grid;
 }
 
-@media (min-width: 768px) {
-    .hero-title-row-1 {
-        transform: translateX(-0.09em);
-    }
+.hidden {
+    display: none;
 }
 
-.hero-subtitle {
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.875rem;
-    line-height: 1.25;
-    color: rgba(0, 0, 0, 0.8);
-    max-width: 32rem;
-    margin-top: 2rem;
+.h-full {
+    height: 100%;
 }
 
-@media (min-width: 768px) {
-    .hero-subtitle {
-        font-size: 1.5rem;
-    }
+.w-full {
+    width: 100%;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.border-r {
+    border-right-width: 1px;
+}
+
+/* Custom Border Colors */
+.border-\[#1E1E1E\] {
+    border-color: #1E1E1E;
 }
 
 /* ========================================

@@ -495,36 +495,36 @@
         <section id="main-content" class="relative w-full h-full overflow-hidden hero-section" role="main">
             <!-- Grid Background Lines -->
             <div class="absolute inset-0 w-full h-full hidden md:block pointer-events-none">
-                <div class="h-full grid grid-cols-custom xl:grid-cols-custom">
-                    <div class="grid-border"></div>
-                    <div class="grid-border"></div>
-                    <div class="grid-border"></div>
-                    <div class="grid-border"></div>
-                    <div class="grid-border"></div>
-                    <div class="grid-border"></div>
+                <div class="h-full grid grid-cols-[2fr_10fr_10fr_2fr] xl:grid-cols-[2fr_10fr_10fr_10fr_10fr_2fr]">
+                    <div class="border-r border-[#1E1E1E] h-full"></div>
+                    <div class="border-r border-[#1E1E1E] h-full"></div>
+                    <div class="border-r border-[#1E1E1E] h-full"></div>
+                    <div class="border-r border-[#1E1E1E] h-full"></div>
+                    <div class="border-r border-[#1E1E1E] h-full"></div>
+                    <div class="border-r border-[#1E1E1E] h-full"></div>
                 </div>
             </div>
             
             <!-- Hero Content Grid -->
-            <div class="relative grid hero-grid xl:hero-grid">
+            <div class="relative grid grid-cols-[2fr_10fr_10fr_2fr] xl:grid-cols-[2fr_10fr_10fr_10fr_10fr_2fr] absolute inset-0 mt-40 mb-48 gap-y-4">
                 <!-- Row 1: DÉVELOPPEMENT -->
-                <div class="hero-text-row-1 xl:hero-text-row-1 flex overflow-hidden" style="--animation-delay: 0s;">
-                    <h1 class="hero-title hero-title-row-1" data-fr="DÉVELOPPEMENT" data-en="DEVELOPMENT">
+                <div class="row-start-1 col-start-2 col-end-5 xl:col-end-6 flex overflow-hidden" style="--animation-delay: 0s;">
+                    <h1 class="font-geist-sans text-[10vw] md:text-[12vw] xl:text-[10.5vw] font-medium leading-none tracking-tighter translate-x-0 md:-translate-x-[0.09em] hero-text hero-title" data-fr="DÉVELOPPEMENT" data-en="DEVELOPMENT">
                         DÉVELOPPEMENT
                     </h1>
                 </div>
                 
                 <!-- Row 2: AGENCE -->
-                <div class="hero-text-row-2 xl:hero-text-row-2 flex justify-center md:justify-end overflow-hidden" style="--animation-delay: 0.15s;">
-                    <h1 class="hero-title" data-fr="AGENCE" data-en="AGENCY">
+                <div class="row-start-2 col-start-2 col-end-4 xl:col-end-6 flex justify-center md:justify-end overflow-hidden" style="--animation-delay: 0.15s;">
+                    <h1 class="font-geist-sans text-[10vw] md:text-[12vw] xl:text-[10vw] font-medium leading-none tracking-tighter hero-text hero-title" data-fr="AGENCE" data-en="AGENCY">
                         AGENCY
                     </h1>
                 </div>
                 
                 <!-- Row 3: Subtitle -->
-                <div class="hero-text-row-3 flex pr-4" style="--animation-delay: 0.3s;">
+                <div class="row-start-3 col-start-2 col-end-4 xl:col-end-6 flex pr-4" style="--animation-delay: 0.3s;">
                     <div class="mt-8 max-w-lg overflow-hidden">
-                        <p class="hero-subtitle" data-fr="VOUS AVEZ UNE IDÉE DE PROJET MAIS VOUS ÊTES PERDU AVEC TOUTE LA TECHNIQUE? LAISSEZ-NOUS NOUS EN OCCUPER ET RÉALISER VOTRE PROJET!" data-en="YOU HAVE A PROJECT IDEA BUT YOU'RE LOST WITH ALL THE TECH STUFF? LET US HANDLE IT AND MAKE IT HAPPEN!">
+                        <p class="text-sm md:text-2xl leading-tight font-poppins text-black/80 hero-text" data-fr="VOUS AVEZ UNE IDÉE DE PROJET MAIS VOUS ÊTES PERDU AVEC TOUTE LA TECHNIQUE? LAISSEZ-NOUS NOUS EN OCCUPER ET RÉALISER VOTRE PROJET!" data-en="YOU HAVE A PROJECT IDEA BUT YOU'RE LOST WITH ALL THE TECH STUFF? LET US HANDLE IT AND MAKE IT HAPPEN!">
                             YOU HAVE A PROJECT IDEA BUT YOU'RE LOST WITH ALL THE TECH STUFF? LET US HANDLE IT AND MAKE IT HAPPEN!
                         </p>
                     </div>
