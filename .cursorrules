@@ -1,0 +1,187 @@
+# Delivix WordPress Redesign Project - Development Rules
+
+## Project Overview
+We are redesigning a WordPress website by reverse engineering designs from Framer templates and WordPress sites. This is a solo development project where I act as the top-level frontend-heavy full-stack engineer, and you provide design assets via browser dev tools inspection.
+
+## Tech Stack
+- **WordPress**: Core CMS platform
+- **HTML**: Semantic, accessible markup
+- **Bootstrap**: CSS framework for responsive design
+- **GSAP**: Advanced animations and transitions
+- **Flickity**: Carousel and slider functionality
+- **CSS**: Custom styling and animations
+- **JavaScript**: Interactive functionality and GSAP integration
+
+## Development Approach
+
+### 1. Design Reverse Engineering Process
+- You will inspect target sites using browser dev tools
+- Extract HTML structure, CSS styles, and JavaScript functionality
+- Provide me with:
+  - HTML markup structure
+  - CSS styles (including computed values)
+  - JavaScript code snippets
+  - Screenshots or design references
+  - Specific component requirements
+
+### 2. Implementation Strategy
+- **Component-based development**: Build reusable WordPress components
+- **Mobile-first responsive design**: Start with mobile, scale up to desktop
+- **Performance optimization**: Optimize images, minimize HTTP requests
+- **Accessibility compliance**: WCAG 2.1 AA standards
+- **Cross-browser compatibility**: Modern browsers + IE11 support
+
+### 3. WordPress Integration
+- **Custom themes**: Build from scratch or modify existing themes
+- **Custom post types**: For specialized content management
+- **Custom fields**: Advanced content management with ACF or similar
+- **Plugin development**: Custom functionality when needed
+- **Child themes**: For safe customization and updates
+
+## Coding Standards
+
+### HTML
+- Semantic HTML5 elements
+- Proper heading hierarchy (h1-h6)
+- Alt text for all images
+- ARIA labels where appropriate
+- Clean, readable markup structure
+
+### CSS
+- BEM methodology for class naming
+- CSS custom properties (variables) for consistency
+- Mobile-first media queries
+- Organized by component/feature
+- Vendor prefixes where needed
+
+### JavaScript
+- ES6+ syntax with fallbacks
+- Modular code structure
+- Error handling and logging
+- Performance optimization
+- GSAP best practices
+
+### WordPress
+- WordPress coding standards compliance
+- Proper hooks and filters usage
+- Security best practices
+- Database optimization
+- Plugin/theme compatibility
+
+## File Organization
+```
+wp-content/themes/delivix-custom/
+├── assets/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   └── fonts/
+├── inc/
+│   ├── custom-post-types.php
+│   ├── custom-fields.php
+│   └── theme-functions.php
+├── template-parts/
+│   ├── components/
+│   ├── content/
+│   └── layout/
+├── page-templates/
+├── functions.php
+├── style.css
+├── index.php
+└── README.md
+```
+
+## Development Workflow
+
+### 1. Planning Phase
+- Analyze target design requirements
+- Break down into components
+- Plan WordPress structure
+- Define custom post types/fields
+
+### 2. Development Phase
+- Build components incrementally
+- Test responsiveness across devices
+- Implement animations with GSAP
+- Integrate with WordPress backend
+
+### 3. Testing Phase
+- Cross-browser testing
+- Performance optimization
+- Accessibility validation
+- WordPress functionality testing
+
+### 4. Deployment Phase
+- Production optimization
+- Database optimization
+- Caching implementation
+- Security hardening
+
+## Communication Guidelines
+
+### When You Provide Design Assets:
+- Specify the exact component/section
+- Include responsive breakpoints
+- Note any interactive behaviors
+- Provide animation requirements
+- Specify WordPress integration needs
+
+### When I Ask for Clarification:
+- I will reference specific sections of this .cursorrules
+- I will ask for specific details needed
+- I will provide implementation options
+- I will suggest WordPress best practices
+
+## Quality Assurance
+
+### Code Quality
+- Clean, readable, maintainable code
+- Proper documentation and comments
+- Consistent naming conventions
+- Error handling and validation
+
+### Performance
+- Optimized images and assets
+- Minified CSS/JS in production
+- Efficient database queries
+- Caching strategies
+
+### Accessibility
+- WCAG 2.1 AA compliance
+- Keyboard navigation support
+- Screen reader compatibility
+- Color contrast requirements
+
+## Scope Boundaries
+
+### What We Will Build
+- Custom WordPress theme
+- Responsive design components
+- Advanced animations with GSAP
+- Interactive carousels with Flickity
+- Custom post types and fields
+- Optimized performance
+
+### What We Will NOT Build
+- Complex e-commerce functionality
+- Advanced user management systems
+- Third-party integrations (unless specified)
+- Complex database architectures
+- Advanced security features beyond WordPress standards
+
+## Success Metrics
+- Responsive design across all devices
+- Smooth animations and transitions
+- Fast loading times (<3 seconds)
+- Accessibility compliance
+- WordPress best practices adherence
+- Clean, maintainable codebase
+
+## Always Reference This File
+- Before starting any new component
+- When making architectural decisions
+- When implementing new features
+- When optimizing performance
+- When testing functionality
+
+Remember: This .cursorrules file is our development bible. Always refer to it for guidance on approach, standards, and scope.
