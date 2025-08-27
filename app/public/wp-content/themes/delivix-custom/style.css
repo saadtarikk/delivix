@@ -823,6 +823,7 @@ small {
     z-index: 999;
     top: 0;
     transition: .5s ease;
+    background: #1e1e1e !important;
 }
 
 .menu-header--inner {
