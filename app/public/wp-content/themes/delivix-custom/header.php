@@ -524,7 +524,7 @@
                 <!-- Row 3: Subtitle -->
                 <div class="row-start-3 col-start-2 col-end-4 xl:col-end-6 flex pr-4" style="--animation-delay: 0.3s;">
                     <div class="mt-8 max-w-lg overflow-hidden">
-                        <p class="text-sm md:text-2xl leading-tight font-poppins text-black/80 hero-text" data-fr="VOUS AVEZ UNE IDÉE DE PROJET MAIS VOUS ÊTES PERDU AVEC TOUTE LA TECHNIQUE? LAISSEZ-NOUS NOUS EN OCCUPER ET RÉALISER VOTRE PROJET!" data-en="YOU HAVE A PROJECT IDEA BUT YOU'RE LOST WITH ALL THE TECH STUFF? LET US HANDLE IT AND MAKE IT HAPPEN!">
+                        <p class="text-sm md:text-2xl leading-tight font-poppins text-white hero-text" data-fr="VOUS AVEZ UNE IDÉE DE PROJET MAIS VOUS ÊTES PERDU AVEC TOUTE LA TECHNIQUE? LAISSEZ-NOUS NOUS EN OCCUPER ET RÉALISER VOTRE PROJET!" data-en="YOU HAVE A PROJECT IDEA BUT YOU'RE LOST WITH ALL THE TECH STUFF? LET US HANDLE IT AND MAKE IT HAPPEN!">
                             YOU HAVE A PROJECT IDEA BUT YOU'RE LOST WITH ALL THE TECH STUFF? LET US HANDLE IT AND MAKE IT HAPPEN!
                         </p>
                     </div>
