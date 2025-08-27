@@ -826,6 +826,22 @@ small {
     background: #1e1e1e !important;
 }
 
+/* Sticky Header on Scroll */
+.menu-header.scrolled {
+    background: rgba(30, 30, 30, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure header stays on top of hero content */
+#sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
 .menu-header--inner {
     max-width: 100%;
     padding: 0;

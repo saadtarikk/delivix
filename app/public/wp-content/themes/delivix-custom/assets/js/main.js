@@ -41,6 +41,7 @@
         initAnimations();
         initForms();
         initLazyLoading();
+        initStickyHeader();
     }
 
     /**
@@ -392,6 +393,22 @@
 
             document.querySelectorAll('img[data-src]').forEach(img => {
                 imageObserver.observe(img);
+            });
+        }
+    }
+
+    /**
+     * Initialize Sticky Header
+     */
+    function initStickyHeader() {
+        const header = document.getElementById('sticky-header');
+        if (header) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
             });
         }
     }
